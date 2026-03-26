@@ -1,6 +1,7 @@
 # Writing Style Guide
 
-This document defines the structural writing style for the公众号内容。  
+This document defines the structural writing style for articles published on WeChat Official Accounts (微信公众号).
+
 It is intended to maintain intellectual consistency across all articles.
 
 The goal is not uniformity of expression, but stability of thinking structure.
