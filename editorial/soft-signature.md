@@ -65,6 +65,15 @@ Avoid abrupt philosophical escalation.
 
 Understanding should feel discovered, not declared.
 
+Scientific framing is welcome when it appears as a local sharpening move:
+
+- naming a distributional pattern
+- introducing a compact system category
+- borrowing a restrained statistical metaphor
+
+The article should still feel like production memory,
+not a converted research paper.
+
 ---
 
 ## Pattern 5 — Uneven Structural Rhythm
@@ -129,6 +138,16 @@ This includes:
 
 Not as formal math, but as cognitive habit.
 
+At times this perspective may become slightly more explicit.
+
+Terms such as equivalence classes, sampling analogies,
+or conditional distinctions are acceptable
+when they help stabilize a recurring system observation.
+
+The test is simple:
+the concept should make the phenomenon easier to see,
+not merely sound more rigorous.
+
 ---
 
 ## Pattern 9 — Infrastructure Sensibility
@@ -157,3 +176,12 @@ Knowledge is presented as:
 - experience-shaped  
 
 Engineering truth is conditional.
+
+This humility should remain visible even when the prose becomes more scientific.
+
+Useful signals include:
+
+- acknowledging non-separable factors
+- avoiding hard causal closure
+- presenting categories as working distinctions
+- treating models as temporary handles on reality
