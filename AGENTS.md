@@ -2,20 +2,28 @@
 
 This repository is primarily a writing workspace. The main working areas are `drafts/`, `published/`, and `editorial/`. The `projects/` directory exists as reference material for writing and should usually be treated as source context rather than the main editing target.
 
-## Git Safety
+## Git And Network Notes
 
-Be careful when committing or pushing from this repository.
+`git pull` or `git push` may fail here even when the git command itself is correct. The issue is sometimes the local network proxy mode rather than repository state.
 
-A previous agent workflow exposed an important issue: there may already be unrelated files staged in the index before you start your own work. If you run `git commit` without checking the staged set carefully, your commit may include files that were not part of your intended change.
+If git network operations fail, check whether Clash is currently in `rule` mode. In some cases, git works only after switching Clash to `global` mode first.
 
-Before every commit or push:
+Recommended workflow:
+
+1. Try the git command normally first.
+2. If the network path looks blocked, switch Clash from `rule` to `global`.
+3. Retry the git command.
+4. After the git operation succeeds, switch Clash back to `rule`.
+
+Do not leave Clash in `global` mode longer than necessary.
+
+When mentioning this behavior to the user or another agent, be explicit that the problem is often "git traffic pathing through Clash" rather than git itself being broken.
+
+Still check the staged set before committing:
 
 1. Run `git status --short`.
 2. Run `git diff --cached --name-only`.
 3. Confirm that every staged file belongs to the current task.
-4. If unrelated files are already staged, do not include them accidentally. Stage only the files for the current task, or pause and surface the ambiguity to the user.
-
-Do not assume that "files I just added" is the same as "everything currently staged".
 
 ## Editing Guidance
 
