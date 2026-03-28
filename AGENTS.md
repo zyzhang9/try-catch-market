@@ -17,6 +17,15 @@ Recommended workflow:
 
 Do not leave Clash in `global` mode longer than necessary.
 
+When switching Clash mode for a git network operation, prefer doing the mode switch, git command, and mode restore in one atomic shell script with a `trap` that always restores `rule` on exit. This reduces the chance of leaving Clash in `global` mode if the git command fails or the turn is interrupted.
+
+Preferred pattern:
+
+1. Install a shell `trap` that restores Clash to `rule`.
+2. Switch Clash to `global`.
+3. Run `git push` or `git pull`.
+4. Let the `trap` restore `rule` automatically on exit.
+
 When mentioning this behavior to the user or another agent, be explicit that the problem is often "git traffic pathing through Clash" rather than git itself being broken.
 
 Still check the staged set before committing:
