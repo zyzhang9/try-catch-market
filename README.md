@@ -4,6 +4,13 @@ This repository is a publishing workspace for long-form writing on quantitative 
 
 The emphasis is not on tutorials or implementation guides, but on how production trading systems behave under uncertainty.
 
+The current publication identity is:
+
+- publication name: `漂移在交易场`
+- recurring observer persona: `Drift`
+
+Drift is used as a restrained observing voice rather than the main subject of the project.
+
 ## Project Purpose
 
 This repository is primarily a writing workspace, not a single runnable trading system.
@@ -14,9 +21,11 @@ The `projects/` directory contains snapshots of real code from related trading p
 
 They should be understood as supporting source material rather than the main object of development in this repository. In other words:
 
-- `drafts/`, `published/`, and `editorial/` are the primary working areas.
+- `posts/` and `editorial/` are the primary working areas.
 - `projects/` exists to ground the writing in real systems and real code.
 - The repository should be interpreted as a research and writing environment built around real trading code references.
+
+The `old/` directory is only a temporary migration holding area for legacy articles from the previous structure. It is not part of the long-term workflow and can be deleted after the transition.
 
 ## Repository Structure
 
@@ -24,11 +33,11 @@ They should be understood as supporting source material rather than the main obj
 .
 ├── README.md
 ├── cover.png
-├── publication-archive.md
-├── drafts/
 ├── editorial/
+├── old/
+├── posts/
 ├── projects/
-└── published/
+└── publication-archive.md
 ```
 
 ### `editorial/`
@@ -40,21 +49,22 @@ Editorial control documents that define the intellectual identity of the project
 - `soft-signature.md` for recurring voice patterns
 - `topic-seed.md` for future article directions
 
-### `drafts/`
+### `posts/`
 
-Work-in-progress articles that are not yet published.
+Primary writing workspace.
 
-Use this folder for:
+Each article lives in its own folder, typically with:
 
-- early article drafts
-- partial rewrites
-- exploratory notes that are already article-shaped
+- `diary.md` for the user's source notes, facts, fragments, and pasted materials
+- `post.md` for the article written from those materials
 
-### `published/`
+This separates source reality from publishable expression.
 
-Finalized articles that are ready to archive as published pieces.
+### `old/`
 
-This folder is the stable record of finished writing.
+Temporary migration area for legacy content from the previous `drafts/` and `published/` structure.
+
+Do not treat this directory as part of the long-term workflow.
 
 ### `projects/`
 
@@ -77,10 +87,11 @@ The writing documents observed system behaviour rather than prescriptive design 
 ## Working Flow
 
 1. Start from a real incident, anomaly, deployment, or debugging event.
-2. Draft the article in `drafts/`.
-3. Check tone and structure against the documents in `editorial/`.
-4. Move finalized pieces into `published/`.
-5. Update `publication-archive.md`.
+2. Create or update a dossier in `posts/<topic>/`.
+3. Record source material in `diary.md`.
+4. Write the article in `post.md`.
+5. Check tone and structure against the documents in `editorial/`.
+6. Update `publication-archive.md` when needed.
 
 ## Intent
 

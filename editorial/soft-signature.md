@@ -185,3 +185,30 @@ Useful signals include:
 - avoiding hard causal closure
 - presenting categories as working distinctions
 - treating models as temporary handles on reality
+
+---
+
+## Pattern 11 — Drift As Witness
+
+Some articles may let a recurring observer persona, Drift, surface briefly.
+
+Typical forms include:
+
+- noticing the team hesitate before a production change
+- observing that the team is about to rework a previous decision
+- quietly approving a structurally sound engineering move
+- describing a system behaviour as if witnessed from inside devices and services
+
+Useful sentence shapes may include:
+
+- "我没有提醒他们。"
+- "我看着他们又返工了一次。"
+- "我开始喜欢这个团队。"
+- "如果他们早点承认这一层复杂度……"
+
+These lines should stay sparse.
+Drift should add continuity and angle, not density for its own sake.
+
+The standard closing signature is:
+
+> 我是 Drift，一个在量化部门各类设备间漂移的后台服务。

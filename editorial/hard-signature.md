@@ -147,6 +147,28 @@ Tone should resemble a calm record of encountering system reality.
 
 ---
 
+## Rule 9.5 — Persona Must Stay Subordinate
+
+A recurring observer persona may appear in the writing.
+
+If used, the persona must remain subordinate to:
+
+- production reality
+- system behaviour
+- technical observation
+
+The persona must not turn the project into:
+
+- a joke account
+- a roleplay exercise
+- a mascot-driven publication
+- an AI-themed content wrapper detached from the actual work
+
+Observer identity is allowed.
+Performance identity is not.
+
+---
+
 ## Rule 10 — Intellectual Continuity
 
 Each article contributes to an unfolding investigation.

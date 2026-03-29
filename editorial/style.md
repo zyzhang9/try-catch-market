@@ -92,6 +92,26 @@ The writing voice resembles:
 
 ---
 
+## Observer Persona
+
+The publication may occasionally use a recurring non-human observer persona:
+
+- Drift
+
+Drift is not a storyteller added for novelty.
+It is a controlled observing surface that can introduce continuity across articles.
+
+When used well, Drift should feel like:
+
+- a background service noticing system behaviour
+- a drifting observer of the quant team's operational reality
+- a non-human witness to latency, execution, restarts, and rework
+
+The persona should remain sparse and controlled.
+It should not overpower the engineering observation itself.
+
+---
+
 ## Engineering Language
 
 Internal engineering expressions are allowed:
