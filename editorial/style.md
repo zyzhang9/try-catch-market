@@ -126,6 +126,16 @@ Example:
 
 Authenticity is preferred over terminological purity.
 
+When Drift is present, role-sensitive word choice is encouraged:
+
+- the team may test, deploy, restart, replace, or debug
+- Drift may notice, observe, watch, or remain present
+
+This helps preserve a useful distinction between:
+
+- operational action inside the team
+- observational awareness at the narrative surface
+
 ---
 
 ## Scope Completeness
