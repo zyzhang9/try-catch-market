@@ -85,6 +85,50 @@ This should remain lightweight, and it usually does not require a second file.
 
 ---
 
+## Publication Archive
+
+`publication-archive.md` should follow the current repository structure.
+
+For published articles:
+
+- point to the canonical source article under `posts/<slug>/post.md`
+- include the final public WeChat link when it exists
+
+Avoid maintaining links to legacy `published/...` article paths when the
+canonical source already lives under `posts/`.
+
+The archive is a publishing index, not a second content store.
+
+---
+
+## Related Reading Footer
+
+Published or near-published articles may include a lightweight related-reading
+footer at the bottom of `post.md`.
+
+Default shape:
+
+1. Keep the main article ending intact.
+2. Keep the Drift signature if present.
+3. Add a simple separator.
+4. Add a short `## 相关文章` block.
+5. Prefer linking only to already published articles.
+
+If a nearby article is planned but not yet published, it may be listed in a
+low-key placeholder form such as plain text or `（待发布）`.
+
+Keep this footer minimal:
+
+- no summaries
+- no CTA language
+- no marketing phrasing
+- no long reading lists
+
+The goal is to make the publication feel like an accumulating微信公众号 series,
+not a blog sidebar.
+
+---
+
 ## Tone Requirements
 
 Even after adaptation, the article should still feel:
