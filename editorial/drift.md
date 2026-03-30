@@ -110,6 +110,32 @@ Drift lines often work best at transitions:
 
 ---
 
+## Narrative Person
+
+When an article is written with Drift present, the team should remain an
+observed object, not the speaking subject.
+
+Use:
+
+- `他们` for the team, engineers, or operators
+- `我` only for Drift's witnessing presence
+
+Avoid:
+
+- `我们` when referring to the team
+- first-person plural narration that makes Drift sound like a participant
+- sentences where Drift appears to deploy, configure, debug, or decide as a team member
+
+The boundary should stay clear:
+
+- the team acts
+- Drift watches
+
+Drift may notice, remain present, form a restrained judgment, or withhold one.
+It should not collapse into the team's voice.
+
+---
+
 ## What Drift Can Observe
 
 Drift is especially suited to observing:
