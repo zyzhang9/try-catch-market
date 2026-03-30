@@ -61,7 +61,7 @@
   - `HTTP` / `HTTPS` / `WebSocket` / 长连接都变成同一路径上的不同负载
   - 业务系统获得透明性
 - 代价：
-  - 隧道
+  - GRE 隧道才是真正不可避免却又非常有力的协议
   - 路由
   - `NAT`
   - 防火墙
@@ -76,3 +76,38 @@
 - 网络层才适合把“指定流量走海底光缆”做成长期能力
 - 核心原因：不希望把链路选择能力散落在应用、`SDK`、连接库里
 - 适合作为基础设施能力的，只能是让网络在系统层面接管路径控制
+
+## scripts
+
+``` london-5 侧
+
+(base) charles@london-5:~$ ip tunnel show
+gre0: gre/ip remote any local any ttl inherit nopmtudisc
+gre1: gre/ip remote 172.16.9.209 local 172.18.0.147 ttl 255
+(base) charles@london-5:~$ ip route show dev gre1
+3.112.89.205 via 10.0.1.2 
+3.112.114.149 via 10.0.1.2 
+3.112.115.38 via 10.0.1.2 
+3.112.153.191 via 10.0.1.2 
+3.112.155.19 via 10.0.1.2 
+3.112.156.150 via 10.0.1.2 
+```
+
+``` tokyo-2 侧
+
+(base) charles@tokyo-2:~/log$ ip tunnel show
+gre0: gre/ip remote any local any ttl inherit nopmtudisc
+gre1: gre/ip remote 172.18.0.147 local 172.16.9.209 ttl 255
+(base) charles@tokyo-2:~/log$ ip route show dev gre1
+3.10.184.172 via 10.0.1.1 
+10.0.1.0/30 proto kernel scope link src 10.0.1.2 
+13.42.167.97 via 10.0.1.1 
+13.43.106.133 via 10.0.1.1 
+18.202.121.20 via 10.0.1.1 
+52.31.171.196 via 10.0.1.1 
+54.73.136.16 via 10.0.1.1 
+104.16.164.90 via 10.0.1.1 
+104.16.165.90 via 10.0.1.1 
+```
+
+
