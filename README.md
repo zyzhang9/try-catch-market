@@ -58,6 +58,10 @@ Each article lives in its own folder, typically with:
 - `diary.md` for the user's source notes, facts, fragments, and pasted materials
 - `post.md` for the article written from those materials
 
+Optional render outputs may also be generated later from an approved `post.md`
+for specific publishing platforms, but those are downstream artifacts rather than
+the primary writing target.
+
 This separates source reality from publishable expression.
 
 ### `old/`
@@ -89,9 +93,14 @@ The writing documents observed system behaviour rather than prescriptive design 
 1. Start from a real incident, anomaly, deployment, or debugging event.
 2. Create or update a dossier in `posts/<topic>/`.
 3. Record source material in `diary.md`.
-4. Write the article in `post.md`.
+4. Write and revise the article only in `post.md`.
 5. Check tone and structure against the documents in `editorial/`.
-6. Update `publication-archive.md` when needed.
+6. Treat `post.md` approval as the end of the writing phase.
+7. Only after `post.md` is approved, generate any platform-specific render output
+   such as `openwrite.md`.
+8. Keep style rendering separate from article development so platform formatting
+   does not distort the writing itself.
+9. Update `publication-archive.md` when needed.
 
 ## Intent
 
