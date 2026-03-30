@@ -20,7 +20,12 @@
 
 ## Topology
 
-- 最后稳定下来只用了两个核心节点
+- 实际配置里后来已经长成四台机器
+  - `London-5`
+  - `Tokyo-2`
+  - `Tokyo-3`
+  - `Frankfurt-1`
+- 但围绕 London 出口这篇主要仍可收束成 Tokyo / London 双点叙述
 - Tokyo 是交易流量真正发起的地方
 - 策略、下单、行情连接大多在 Tokyo
 - 默认出口尽量保持简单
@@ -38,14 +43,23 @@
 
 - 最后选的是 `GRE`
 - 原因不是最时髦，而是足够直接
+- 实际配置里已经不是一条通道，而是多条固定名字接口
+  - `gre1`
+  - `gre2`
+  - `gre3`
+  - `gre4`
 - Tokyo / London 之间起固定名字的接口，例如 `gre-lon` / `gre-tok`
-- 隧道地址是一小段内网，例如 `10.254.12.1/30` 和 `10.254.12.2/30`
+- 实际样本里 overlay 会落成 `10.0.1.0/30`、`10.0.2.0/30`、`10.0.3.0/30`、`10.0.4.0/30`
+- 某条实际链路上，Tokyo-2 是 `10.0.1.2/30`，London 侧 gateway 是 `10.0.1.1`
 - 价值：
   - `route table`
   - `UFW`
   - 监控脚本
   - `systemd service`
   都可以围绕这对确定接口展开
+- 每条 GRE 都会有自己的 setup 脚本和 oneshot service
+  - 例如 `/usr/local/bin/setup_gre1.sh`
+  - 例如 `/etc/systemd/system/gre1-setup.service`
 - Tokyo 决定哪些流量进隧道
 - London 保证进隧道的流量能出去再回来
 
@@ -61,6 +75,11 @@
   - 把目标域名解析出的 `IP` 按 `/32` 写进 `subsea`
   - 用 `ip rule` 把命中特定目标集的流量导向这个表
 - 系统看起来像按域名分流，但内核真正理解的仍然只是 `IP`
+- 实际机器上 route updater 更像按接口维护 `/32`
+  - 例如 `update_gre1_routes.sh`
+  - gateway 会直接写成 `10.0.1.1`
+  - `ip route show dev gre1` 能看到一批目标 `/32`
+- 文档样本里 Kraken 相关地址会直接以 `/32 via 10.0.1.1 dev gre1` 的形式出现
 
 ## DNS Sync
 
@@ -79,6 +98,21 @@
   - `/usr/local/bin/subsea-route-sync`
   - `/var/lib/subsea/routes.json`
   - `ip route show table subsea` 只作为结果视图，不作为状态源
+- docx 里的更具体形状是“每条 GRE 各自有 updater + service + timer”
+  - `/usr/local/bin/update_gre1_routes.sh`
+  - `/etc/systemd/system/update-gre1-routes.service`
+  - `/etc/systemd/system/update-gre1-routes.timer`
+- timer 粒度可以细到每分钟 reconcile 一次
+- 更新脚本里会直接维护 hostnames 列表，比如 Kraken 的多个 ws / auth 域名
+- 更新脚本会做安全过滤
+  - loopback
+  - RFC1918
+  - 避免把奇怪地址写进 GRE 路由
+- DNS 这层后来甚至继续长成 split-DNS
+  - Tokyo 侧跑 `dnsmasq` 提供远端解析
+  - London 侧本地 `dnsmasq` 只把 `binance.com` / `binance.net` 转发到 Tokyo
+  - 其他域名继续走 London 本地默认解析
+  - 目标不是“所有 DNS 都远程”，而是让少数目标域名借远端 POP 解析结果
 
 ## UFW and NAT
 
@@ -96,6 +130,9 @@
 - `NAT` 需要在 London 侧把 Tokyo 发出的隧道内地址变成 London 的公网身份
 - 例如：
   - `iptables -t nat -A POSTROUTING -o ens5 -j MASQUERADE`
+- docx 里还补了更完整的基础条件
+  - `net.ipv4.ip_forward = 1`
+  - `rp_filter = 0`
 
 ## Serviceization
 
@@ -109,6 +146,10 @@
   - `subsea-route-sync.service`
   - `subsea-route-sync.timer`
   - `subsea-healthcheck.service`
+- 更落地的样子是每条通道都有自己的 service / timer
+  - `gre1-setup.service`
+  - `update-gre1-routes.service`
+  - `update-gre1-routes.timer`
 - 重要的不是名字，而是系统开始以服务为单位表达自己
 - 路径控制第一次从工程经验变成机器上的可见状态
 
