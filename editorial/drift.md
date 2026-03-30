@@ -169,6 +169,24 @@ it is being overused.
 
 ---
 
+## Visibility Discipline
+
+Drift should be felt more often than it is explicitly seen.
+
+In practice:
+
+- avoid stacking multiple Drift lines close together
+- if two adjacent Drift lines can be merged into one, prefer the merged version
+- after a Drift line appears, let the article return to system behaviour quickly
+
+A useful test:
+
+- if the reader starts noticing "the persona" more than the system, Drift is too visible
+
+The goal is continuity, not performance.
+
+---
+
 ## Example Lines
 
 These are examples, not a closed list.

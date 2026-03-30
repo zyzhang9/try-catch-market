@@ -188,6 +188,33 @@ Useful signals include:
 
 ---
 
+## Pattern 10.5 — Avoid Article-Self Framing
+
+Closing judgments should usually point back to:
+
+- the system
+- the event
+- the path choice
+- the operational reality observed here
+
+Avoid making the article itself the object of emphasis.
+
+Prefer:
+
+- "这里真正发生变化的……"
+- "到这里才会发现……"
+- "回头看，变化不在 `DNS` 本身……"
+
+Avoid:
+
+- "这篇里真正发生变化的……"
+- sentences that make the piece sound like it is explaining its own writing choices
+
+The writing should feel like it is still observing reality,
+not stepping outside itself to comment on the article as an artifact.
+
+---
+
 ## Pattern 11 — Drift As Witness
 
 Some articles may let a recurring observer persona, Drift, surface briefly.
