@@ -94,12 +94,12 @@ The writing voice resembles:
 
 ## Observer Persona
 
-The publication may occasionally use a recurring non-human observer persona:
+The publication is anchored by a recurring non-human observer persona:
 
 - Drift
 
 Drift is not a storyteller added for novelty.
-It is a controlled observing surface that can introduce continuity across articles.
+It is the default observing surface of the公众号, and the main source of narrative continuity across articles.
 
 When used well, Drift should feel like:
 
@@ -109,6 +109,12 @@ When used well, Drift should feel like:
 
 The persona should remain sparse and controlled.
 It should not overpower the engineering observation itself.
+
+In practice this means:
+
+- Drift should usually remain present at least as a closing signature
+- many articles should also let Drift surface briefly inside the body
+- absence of Drift should be treated as a conscious deviation, not the default
 
 ---
 

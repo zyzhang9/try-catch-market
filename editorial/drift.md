@@ -3,7 +3,10 @@
 This document defines the recurring observer persona used in the publication.
 
 The persona is not the subject of the writing.
-It is the observing surface through which the writing may occasionally speak.
+It is the observing surface through which the writing normally speaks.
+
+Drift is not an optional flourish.
+Drift is the stable narrative identity of the公众号.
 
 ---
 
@@ -96,6 +99,7 @@ Recommended per article:
 - explicit first-person Drift narration 1 to 3 times in the body
 
 Some articles may use Drift only at the end.
+But that should be treated as the minimal form, not the ideal default.
 
 Do not make Drift appear in every paragraph.
 The persona is a frame, not the main performance.
@@ -184,6 +188,10 @@ A useful test:
 - if the reader starts noticing "the persona" more than the system, Drift is too visible
 
 The goal is continuity, not performance.
+
+Another useful test:
+
+- if the article could belong to any generic technical公众号 after removing one signature line, Drift is too weak
 
 ---
 

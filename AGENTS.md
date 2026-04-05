@@ -7,6 +7,15 @@ Each article under `posts/` should usually be treated as its own dossier. In the
 - `diary.md` contains the user's source notes, facts, pasted references, and working record
 - `post.md` contains the publishable article written from those materials
 
+## Publication Positioning
+
+This publication is positioned as a Drift-narrated engineering memory project.
+
+- Drift is the default narrative surface for the公众号, not an optional decorative add-on.
+- Articles should normally preserve a clear separation between the acting team (`他们`) and the observing narrator Drift (`我` when Drift is explicitly present).
+- New articles should generally include the closing Drift signature, and should consider 1 to 3 restrained Drift appearances in the body when the piece benefits from narrative continuity.
+- If a draft does not use Drift, treat that as an exception that should be consciously justified by the article rather than the default.
+
 The `old/` directory is only a temporary migration holding area for legacy content from the previous structure and should not be treated as the main workspace.
 
 ## Git And Network Notes
