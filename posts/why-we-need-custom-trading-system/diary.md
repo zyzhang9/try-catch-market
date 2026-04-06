@@ -24,6 +24,17 @@ fork、patch、本地维护、提 PR，无响应。
 debug 时混淆：上游行为还是本地 patch。
 library 最后更像原材料。
 
+Additional source note:
+
+`ccxt -> adapter -> 自写 driver` 这条演化线已拆到独立 dossier：
+`posts/they-did-not-write-the-driver-on-day-one/`
+
+当前这篇只保留和主线直接相关的部分：
+
+- CCXT 作为统一抽象在生产语义前开始失效
+- fork / patch 之后库逐渐变成原材料
+- 真正压垮统一抽象的是多路径执行与交易所事件顺序
+
 Exchange timing:
 
 Binance 先 trade execution，后 balance update。
@@ -37,3 +48,19 @@ Writing:
 保留 Drift。
 正文里让 Drift 作为观察者出现 1-2 次。
 不要写成框架评论。
+
+Boundary note:
+
+当前 `post.md` 更偏“为什么最后得自己掌握交易系统行为”，
+重点是多路径执行、交易所时序差异、统一抽象失效。
+
+上面那条 ccxt -> adapter -> 自写 driver 的材料，
+已经单独开篇，不再继续并入当前 `post.md`。
+
+两篇平衡方式：
+
+这一篇保留：
+为什么统一框架最终兜不住生产里的真实执行行为。
+
+另一篇单独写：
+他们并不是从第一天就全自研，而是在 ccxt 之上逐步把关键路径收回自己手里。
