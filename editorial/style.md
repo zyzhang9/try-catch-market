@@ -19,6 +19,13 @@ The writing should reflect:
 
 Articles are records of interaction with real systems, not explanatory essays.
 
+Source-layer implication:
+
+- `posts/*/diary.md` should also preserve this orientation
+- diary files are working records of what the team saw, did, and inferred
+- they should not drift into meta-writing notes about how the article itself should be written
+- article-planning or editorial-boundary notes belong in `editorial/`
+
 ---
 
 ## Incident-Driven Principle

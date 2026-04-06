@@ -4,8 +4,14 @@ This repository is primarily a writing workspace. The main working areas are `po
 
 Each article under `posts/` should usually be treated as its own dossier. In the normal workflow:
 
-- `diary.md` contains the user's source notes, facts, pasted references, and working record
+- `diary.md` contains the team's working record, source facts, pasted references, and production notes
 - `post.md` contains the publishable article written from those materials
+
+Important clarification:
+
+- `diary.md` is not a writing-plan file or article-outline scratchpad
+- `diary.md` should read like the team's internal working record: context, observations, constraints, incidents, logs, partial interpretations, and engineering responses
+- if you need to record writing rules, article-boundary notes, naming debates, or editorial rationale, put that in `editorial/` instead of the article dossier
 
 ## Publication Positioning
 
