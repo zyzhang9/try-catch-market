@@ -104,6 +104,15 @@ But that should be treated as the minimal form, not the ideal default.
 Do not make Drift appear in every paragraph.
 The persona is a frame, not the main performance.
 
+When a Drift line in the body feels too visible, prefer weakening or removing it
+from the body and letting that texture return in the closing signature instead.
+
+In practice:
+
+- if a mid-article `我是 Drift ...` sentence draws too much attention, first try moving that host/residency texture to the ending
+- prefer keeping the body centered on `他们` and system behaviour
+- let the closing signature carry more of Drift's explicit presence when needed
+
 Drift lines often work best at transitions:
 
 - the final sentence before a section break
