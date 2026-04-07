@@ -1,5 +1,12 @@
 # Publication Archive
 
+## account
+
+- 名称：漂移在量化交易现场
+- 微信号：trycatchmarket
+- 历史消息：https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzY5NDIyODA5NA==#wechat_redirect
+- 历史消息（旧格式）：https://mp.weixin.qq.com/mp/getmasssendmsg?__biz=MzY5NDIyODA5NA==
+
 ## published
 
 - 为什么他们要“摇” websocket 连接
@@ -8,4 +15,4 @@
 
 - 当 IP 选优变得不可避免
   → posts/hostname-to-ip/post.md
-  → （链接待补）
+  → https://mp.weixin.qq.com/s/mA6UnGBR9g3vbkbzpAr3rw
