@@ -16,3 +16,7 @@
 - 当 IP 选优变得不可避免
   → posts/hostname-to-ip/post.md
   → https://mp.weixin.qq.com/s/mA6UnGBR9g3vbkbzpAr3rw
+
+- 走海底光缆的流量：验证、原型与生产
+  → posts/subsea-traffic-lifecycle/post.md
+  → （链接待补）
