@@ -119,4 +119,4 @@ Tokyo 和 London 之间会起固定名字的接口。最开始他们把它叫成
 
 - [为什么他们要“摇” websocket 连接](https://mp.weixin.qq.com/s/pj9dvWg3odgpso9lff-3OQ)
 - [当 IP 选优变得不可避免](https://mp.weixin.qq.com/s/mA6UnGBR9g3vbkbzpAr3rw)
-- 走海底光缆的流量：验证、原型与生产（待发布）
+- [走海底光缆的流量：验证、原型与生产](https://mp.weixin.qq.com/s/M-iDV_uRDfzeRBQEMjLolw)

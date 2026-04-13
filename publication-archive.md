@@ -19,5 +19,8 @@
 
 - 走海底光缆的流量：验证、原型与生产
   → posts/subsea-traffic-lifecycle/post.md
+  → https://mp.weixin.qq.com/s/M-iDV_uRDfzeRBQEMjLolw
+
+- 从重启中恢复必须是轻量级的
+  → posts/restartable-trading-system/post.md
   → （链接待补）
-  → 排期：2026-04-13 11:00
