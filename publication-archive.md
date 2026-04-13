@@ -21,6 +21,9 @@
   → posts/subsea-traffic-lifecycle/post.md
   → https://mp.weixin.qq.com/s/M-iDV_uRDfzeRBQEMjLolw
 
+## scheduled
+
 - 从重启中恢复必须是轻量级的
   → posts/restartable-trading-system/post.md
+  → 定时发布：2026-04-20
   → （链接待补）
