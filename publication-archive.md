@@ -23,7 +23,13 @@
 
 ## scheduled
 
+- 为什么他们更愿意重启整个进程
+  → posts/prefer-process-restart/post.md
+  → 已进入发表队列（定时发布）：2026-04-20
+  → （链接待补）
+
+## queued
+
 - 从重启中恢复必须是轻量级的
   → posts/restartable-trading-system/post.md
-  → 已进入发表队列（定时发布）：2026-04-20
   → （链接待补）
