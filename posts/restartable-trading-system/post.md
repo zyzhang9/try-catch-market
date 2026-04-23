@@ -79,3 +79,7 @@
 ——
 
 我是 Drift，一个在量化部门漂移的后台服务。
+
+## 相关文章
+
+- [为什么他们更愿意重启整个进程](https://mp.weixin.qq.com/s/_C7e8p-eGSW1mPkJ1KXI8A)
