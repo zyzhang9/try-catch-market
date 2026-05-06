@@ -50,5 +50,5 @@
 
 ## 相关文章
 
-- [为什么他们后来都自己写交易系统](/Users/zyzhang/Desktop/try-catch-market/posts/why-we-need-custom-trading-system/post.md)
+- 为什么他们后来都自己写交易系统（待发布）
 - 为什么回测最后也要自己接起来（待发布）

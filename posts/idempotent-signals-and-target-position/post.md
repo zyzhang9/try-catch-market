@@ -85,5 +85,4 @@
 ## 相关文章
 
 - [为什么他们要“摇” websocket 连接](https://mp.weixin.qq.com/s/pj9dvWg3odgpso9lff-3OQ)
-- 从配置的角度理解交易系统架构（待发布）
-- 从重启中恢复必须是轻量级的（待发布）
+- [从重启中恢复必须是轻量级的](https://mp.weixin.qq.com/s/7ZXx6t_Yek2kB0Riozd_Cw)

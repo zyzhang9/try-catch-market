@@ -100,4 +100,4 @@
 
 - [为什么他们要“摇” websocket 连接](https://mp.weixin.qq.com/s/pj9dvWg3odgpso9lff-3OQ)
 - 为什么交易信号需要是幂等的（待发布）
-- 从重启中恢复必须是轻量级的（待发布）
+- [从重启中恢复必须是轻量级的](https://mp.weixin.qq.com/s/7ZXx6t_Yek2kB0Riozd_Cw)
