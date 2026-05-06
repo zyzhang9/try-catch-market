@@ -25,9 +25,10 @@
   → posts/prefer-process-restart/post.md
   → https://mp.weixin.qq.com/s/_C7e8p-eGSW1mPkJ1KXI8A
 
-## scheduled
-
 - 从重启中恢复必须是轻量级的
   → posts/restartable-trading-system/post.md
-  → 已进入发表队列（定时发布）：2026-04-27
-  → （链接待补）
+  → https://mp.weixin.qq.com/s/7ZXx6t_Yek2kB0Riozd_Cw
+
+## scheduled
+
+## queued
