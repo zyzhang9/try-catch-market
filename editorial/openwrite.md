@@ -114,9 +114,6 @@ Default shape:
 4. Add a short `## 相关文章` block.
 5. Prefer linking only to already published articles.
 
-If a nearby article is planned but not yet published, it may be listed in a
-low-key placeholder form such as plain text or `（待发布）`.
-
 Keep this footer minimal:
 
 - no summaries

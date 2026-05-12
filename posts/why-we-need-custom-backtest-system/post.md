@@ -39,4 +39,4 @@
 ## 相关文章
 
 - [从重启中恢复必须是轻量级的](https://mp.weixin.qq.com/s/7ZXx6t_Yek2kB0Riozd_Cw)
-- 为什么交易信号需要是幂等的（待发布）
+- [为什么交易信号需要是幂等的](https://mp.weixin.qq.com/s/QHe2axHH1V7RyT1Fg9UlAg)

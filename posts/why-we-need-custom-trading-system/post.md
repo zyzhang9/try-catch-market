@@ -47,4 +47,3 @@
 ## 相关文章
 
 - [为什么他们要“摇” websocket 连接](https://mp.weixin.qq.com/s/pj9dvWg3odgpso9lff-3OQ)
-- 他们不是一开始就自己写 driver（待发布）

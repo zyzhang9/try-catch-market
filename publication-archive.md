@@ -29,6 +29,14 @@
   → posts/restartable-trading-system/post.md
   → https://mp.weixin.qq.com/s/7ZXx6t_Yek2kB0Riozd_Cw
 
+- 为什么交易信号需要是幂等的
+  → posts/idempotent-signals-and-target-position/post.md
+  → https://mp.weixin.qq.com/s/QHe2axHH1V7RyT1Fg9UlAg
+
 ## scheduled
 
 ## queued
+
+- 从配置的角度理解交易系统架构
+  → posts/trading-system-architecture-from-configuration/post.md
+  → （链接待补）
