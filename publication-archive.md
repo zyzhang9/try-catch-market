@@ -33,10 +33,10 @@
   → posts/idempotent-signals-and-target-position/post.md
   → https://mp.weixin.qq.com/s/QHe2axHH1V7RyT1Fg9UlAg
 
+- 从配置的角度理解交易系统架构
+  → posts/trading-system-architecture-from-configuration/post.md
+  → https://mp.weixin.qq.com/s/vqAVB-bJRH8gTzoAvlEjIw
+
 ## scheduled
 
 ## queued
-
-- 从配置的角度理解交易系统架构
-  → posts/trading-system-architecture-from-configuration/post.md
-  → （链接待补）
